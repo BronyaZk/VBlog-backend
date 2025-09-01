@@ -1,0 +1,36 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+process_filestorage/
+watermark_process/
+user_filestorage/
+ 
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+ 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+.mvn
+.DS_Store
+mvnw*
+
+manage/logs/
+backend/logs/
+neo4j/logs/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+logs/
