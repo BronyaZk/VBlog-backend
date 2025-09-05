@@ -1,7 +1,11 @@
 package org.sang.bean;
 
 import java.sql.Timestamp;
+import java.util.List;
 
+/**
+ * Created by sang on 2017/12/20.
+ */
 public class Article {
     private Long id;
     private String title;
@@ -13,6 +17,60 @@ public class Article {
     private Timestamp publishDate;
     private Integer state;
     private Integer pageView;
+    private Timestamp editTime;
+    private String[] dynamicTags;
+    private String nickname;
+    private String cateName;
+    private List<Tags> tags;
+    private String stateStr;
+
+    public String getStateStr() {
+        return stateStr;
+    }
+
+    public void setStateStr(String stateStr) {
+        this.stateStr = stateStr;
+    }
+
+    public List<Tags> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<Tags> tags) {
+        this.tags = tags;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getCateName() {
+        return cateName;
+    }
+
+    public void setCateName(String cateName) {
+        this.cateName = cateName;
+    }
+
+    public String[] getDynamicTags() {
+        return dynamicTags;
+    }
+
+    public void setDynamicTags(String[] dynamicTags) {
+        this.dynamicTags = dynamicTags;
+    }
+
+    public Timestamp getEditTime() {
+        return editTime;
+    }
+
+    public void setEditTime(Timestamp editTime) {
+        this.editTime = editTime;
+    }
 
     public Long getId() {
         return id;
@@ -93,5 +151,4 @@ public class Article {
     public void setPageView(Integer pageView) {
         this.pageView = pageView;
     }
-    
 }
