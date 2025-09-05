@@ -18,11 +18,6 @@ public class ArticleController {
     @Autowired
     ArticleService articleService;
 
-    /**
-     * 上传图片
-     *
-     * @return 返回值为图片的地址
-     */
 
     @RequestMapping(value = "/{aid}", method = RequestMethod.GET)
     public Article getArticleById(@PathVariable Long aid) {
