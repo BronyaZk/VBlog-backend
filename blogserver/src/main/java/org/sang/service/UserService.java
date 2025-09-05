@@ -52,11 +52,9 @@ public class UserService implements UserDetailsService {
         if (loadUserByUsername != null) {
             return 1;
         }
-        //插入用户,插入之前先对密码进行加密
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setEnabled(true);//用户可用
         long result = userMapper.reg(user);
-        //配置用户的角色，默认都是普通用户
         String[] roles = new String[]{"2"};
         int i = rolesMapper.addRoles(roles, user.getId());
         boolean b = i == roles.length && result == 1;
