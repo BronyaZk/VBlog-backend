@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
 import java.util.List;
-
 @Service
 @Transactional
 public class CategoryService {
@@ -34,3 +33,4 @@ public class CategoryService {
         return categoryMapper.addCategory(category);
     }
 }
+
